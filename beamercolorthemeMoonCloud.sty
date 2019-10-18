@@ -1,0 +1,74 @@
+% MIT License
+
+% Copyright (c) 2019 nbena
+
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+
+
+\ProvidesPackage{beamercolorthemeMoonCloud}
+
+\mode<presentation>
+
+\definecolor{MoonCloudStandard}{RGB}{43,61,80} %dark blue
+\definecolor{MoonCloudgrey}{RGB}{128,128,128} % grey
+\definecolor{MoonCloudtitle}{RGB}{254,254,254} % white!
+\definecolor{MoonCloudyellow}{RGB}{188,156,16} % a dark yellow
+
+% \definecolor{MoonCloudblockbody}{RGB}{240,255,255}
+% \definecolor{MoonCloudblockbody}{RGB}{220,220,220}
+\definecolor{MoonCloudBlockBody}{RGB}{220,220,200} %kinda mix betweeb grey and beige
+\definecolor{MoonCloudAlertBlockBody}{RGB}{180,180,180} % grey, darker
+\definecolor{MoonCloudFootline}{RGB}{180,180,180}
+
+% blocks
+\setbeamercolor{block title}{fg=white, bg=MoonCloudStandard}
+\setbeamercolor{block body}{fg=MoonCloudgrey, bg=MoonCloudBlockBody}
+
+\setbeamercolor{block title alerted}{fg=white, bg=MoonCloudStandard}
+\setbeamercolor{block body alerted}{fg=black, bg=MoonCloudAlertBlockBody}
+
+% text
+\setbeamercolor{normal text}{fg=MoonCloudStandard}
+\setbeamercolor{alerted text}{fg=black}
+\setbeamercolor{title}{fg=MoonCloudtitle,bg=MoonCloudStandard}
+\setbeamercolor{frametitle}{fg=white, bg=MoonCloudStandard}
+\setbeamercolor{itemize item}{fg=MoonCloudStandard}
+\setbeamercolor{itemize subitem}{fg=MoonCloudStandard}
+\setbeamercolor{itemize subsubitem}{fg=MoonCloudStandard}
+\setbeamercolor{enumerate item}{fg=MoonCloudStandard}
+\setbeamercolor{enumerate subitem}{fg=MoonCloudStandard}
+\setbeamercolor{enumerate subsubitem}{fg=MoonCloudStandard}
+\setbeamercolor{description item}{fg=MoonCloudStandard}
+\setbeamercolor{description subitem}{fg=MoonCloudStandard}
+\setbeamercolor{description subsubitem}{fg=MoonCloudStandard}
+
+% doesnt work
+\AtBeginEnvironment{block}{
+    \setbeamercolor{itemize item}{fg=MoonCloudStandard}
+    \setbeamercolor{enumerate item}{fg=MoonCloudStandard}
+}
+
+\setbeamercolor{footline}{bg=MoonCloudFootline, fg=MoonCloudStandard}
+
+% "attributes"
+\setbeamercolor{author}{fg=MoonCloudgrey}
+\setbeamercolor{date}{fg=MoonCloudgrey}
+\setbeamercolor{framesubtitle}{fg=MoonCloudgrey}
+
+\mode<all>

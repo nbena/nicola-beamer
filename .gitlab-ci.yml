@@ -1,0 +1,11 @@
+stages:
+  - build
+compile_pdf:
+  image: aergus/latex
+  script:
+    - latexmk -pdf example.tex
+    - pdfinfo example.pdf
+  stage: build
+  artifacts:
+    paths:
+      - "example.pdf"
