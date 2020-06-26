@@ -1,6 +1,6 @@
 % MIT License
 
-% Copyright (c) 2019 Nicola Bena
+% Copyright (c) 2020 Nicola Bena
 
 % Permission is hereby granted, free of charge, to any person obtaining a copy
 % of this software and associated documentation files (the "Software"), to deal
@@ -21,22 +21,7 @@
 % SOFTWARE.
 
 
-\ProvidesPackage{beamerouterthemeNicola}
+\usepackage[sfdefault]{FiraSans}
+\ProvidesPackage{beamerfontthemenicola}
 
-\useoutertheme{}
-
-\setbeamertemplate{footline}{
-    % colorbox is needed to color the background of the footline
-    \begin{beamercolorbox}[wd=\paperwidth, ht=2.25ex, dp=1ex]{footline}
-        % with h=0.5 there is a great effect, really
-        % \includegraphics[height=0.5cm]{MoonCloudTransparency}
-        \hfill
-        % call the right color for displaying the page number
-        \usebeamercolor[fg]{page number in foot}
-        % actually I don't know what ken1em means ;)
-        \insertframenumber\,/\,\inserttotalframenumber\kern1em%
-    \end{beamercolorbox}
-}
-
-% no navigation symbols which are quite not useful
-\setbeamertemplate{navigation symbols}{}
+\setbeamerfont{text}{family=FiraSans}

@@ -21,7 +21,17 @@
 % SOFTWARE.
 
 
-\usepackage{montserrat}
-\ProvidesPackage{beamerfontthemeNicola}
+\ProvidesPackage{beamerthemenicola}
+\mode<presentation>
 
-\setbeamerfont{text}{family=montserrat}
+% decide which fonts we use
+\usefonttheme{nicola}
+% decide the colors we use
+\usecolortheme{nicola}
+% inner theme: how elements inside the presentation such as bullets,
+% enumerations, and so on appears
+\useinnertheme{nicola}
+% this decide how borders (head, foot...)
+\useoutertheme{nicola}
+
+% \titlegraphic{\includegraphics[scale=0.2]{MoonCloudTransparency}}
